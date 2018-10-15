@@ -1,2 +1,2 @@
 # deep-learning-ND
-Projects and exercises for the Deep Learning ND program https://www.udacity.com/course/deep-learning-nanodegree--nd101
+This repository was created for the [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at [Udacity](https://www.udacity.com/).
