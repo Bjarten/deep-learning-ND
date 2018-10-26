@@ -69,7 +69,7 @@ class NeuralNetwork(object):
         hidden_outputs = self.activation_function(hidden_inputs) # signals from hidden layer
 
         # Output layer - Replace these values with your calculations.
-        final_inputs = np.dot(hidden_outputs, weights_hidden_to_output)# signals into final output layer
+        final_inputs = np.dot(hidden_outputs, self.eights_hidden_to_output)# signals into final output layer
         final_outputs = self.activation_function(final_inputs) # signals from final output layer
         
         return final_outputs, hidden_outputs
@@ -88,21 +88,21 @@ class NeuralNetwork(object):
         #### Implement the backward pass here ####
         ### Backward pass ###
 
-        # TODO: Output error - Replace this value with your calculations.
-        error = None # Output layer error is the difference between desired target and actual output.
+        # Output error - Replace this value with your calculations.
+        error = y - final_outputs # Output layer error is the difference between desired target and actual output.
         
-        # TODO: Calculate the hidden layer's contribution to the error
-        hidden_error = None
+        # Calculate the hidden layer's contribution to the error
+        hidden_error = np.dot(output_error_term, self.eights_hidden_to_output)
         
-        # TODO: Backpropagated error terms - Replace these values with your calculations.
-        output_error_term = None
+        #  Backpropagated error terms - Replace these values with your calculations.
+        output_error_term = error * final_outputs * (1 - final_outputs)
         
-        hidden_error_term = None
+        hidden_error_term = hidden_error * hidden_outputs * (1 - hidden_outputs)
         
         # Weight step (input to hidden)
-        delta_weights_i_h += None
+        delta_weights_i_h +=  hidden_error_term*X[:,None]
         # Weight step (hidden to output)
-        delta_weights_h_o += None
+        delta_weights_h_o += output_error_term*hidden_outputs
         return delta_weights_i_h, delta_weights_h_o
 
     def update_weights(self, delta_weights_i_h, delta_weights_h_o, n_records):
