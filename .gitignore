@@ -2,6 +2,7 @@
 convolutional-neural-networks/mnist-mlp/data/*
 convolutional-neural-networks/cifar-cnn/data/*
 transfer-learning/flower_photos/*
+weight-initialization/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
