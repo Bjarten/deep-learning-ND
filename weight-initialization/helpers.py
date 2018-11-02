@@ -75,7 +75,10 @@ def compare_init_weights(
     colors = ['r', 'b', 'g', 'c', 'y', 'k']
     label_accs = []
     label_loss = []
-
+    
+    fig_size = plt.rcParams["figure.figsize"]
+    plt.figure(figsize=(fig_size[0]*2,fig_size[1]*2))
+    
     assert len(model_list) <= len(colors), 'Too many initial weights to plot'
 
     for i, (model, label) in enumerate(model_list):
@@ -84,7 +87,7 @@ def compare_init_weights(
         plt.plot(loss[:plot_n_batches], colors[i], label=label)
         label_accs.append((label, val_acc))
         label_loss.append((label, loss[-1]))
-
+    
     plt.title(plot_title)
     plt.xlabel('Batches')
     plt.ylabel('Loss')
