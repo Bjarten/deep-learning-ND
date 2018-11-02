@@ -6,11 +6,11 @@ import torch.nn as nn
 import torch.optim
 
 
-def _get_loss_acc(model, train_loader, valid_loader):
+def _get_loss_acc(model, train_loader, valid_loader, n_epochs):
     """
     Get losses and validation accuracy of example neural network
     """
-    n_epochs = 2
+
     learning_rate = 0.001
     
     # Training loss
@@ -68,7 +68,8 @@ def compare_init_weights(
         plot_title,
         train_loader,
         valid_loader,
-        plot_n_batches=100):
+        plot_n_batches=100,
+        n_epochs=2):
     """
     Plot loss and print stats of weights using an example neural network
     """
@@ -82,7 +83,7 @@ def compare_init_weights(
     assert len(model_list) <= len(colors), 'Too many initial weights to plot'
 
     for i, (model, label) in enumerate(model_list):
-        loss, val_acc = _get_loss_acc(model, train_loader, valid_loader)
+        loss, val_acc = _get_loss_acc(model, train_loader, valid_loader, n_epochs)
 
         plt.plot(loss[:plot_n_batches], colors[i], label=label)
         label_accs.append((label, val_acc))
@@ -94,7 +95,7 @@ def compare_init_weights(
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.show()
 
-    print('After 2 Epochs:')
+    print(f'After {n_epochs} Epochs:')
     print('Validation Accuracy')
     for label, val_acc in label_accs:
         print('  {:7.3f}% -- {}'.format(val_acc*100, label))
