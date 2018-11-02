@@ -73,7 +73,7 @@ def compare_init_weights(
     """
     Plot loss and print stats of weights using an example neural network
     """
-    colors = ['r', 'b', 'g', 'c', 'y', 'k']
+    colors = ['r', 'b', 'g', 'c', 'y', 'k', 'm', 'pink']
     label_accs = []
     label_loss = []
     
