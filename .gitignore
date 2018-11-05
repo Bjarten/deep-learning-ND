@@ -4,6 +4,7 @@ convolutional-neural-networks/cifar-cnn/data/*
 transfer-learning/flower_photos/*
 weight-initialization/data/*
 autoencoder/linear-autoencoder/data/*
+autoencoder/convolutional-autoencoder/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
