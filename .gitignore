@@ -6,6 +6,8 @@ weight-initialization/data/*
 autoencoder/linear-autoencoder/data/*
 autoencoder/convolutional-autoencoder/data/*
 autoencoder/denoising-autoencoder/data/*
+project-dog-classification/dogImages/*
+project-dog-classification/lfw/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
