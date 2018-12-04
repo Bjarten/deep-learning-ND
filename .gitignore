@@ -8,6 +8,7 @@ autoencoder/convolutional-autoencoder/data/*
 autoencoder/denoising-autoencoder/data/*
 project-dog-classification/dogImages/*
 project-dog-classification/lfw/*
+word2vec-embeddings/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
