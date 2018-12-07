@@ -10,6 +10,7 @@ project-dog-classification/dogImages/*
 project-dog-classification/lfw/*
 word2vec-embeddings/data/*
 gan-mnist/data/*
+batch-norm/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
