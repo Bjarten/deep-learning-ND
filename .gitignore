@@ -12,6 +12,7 @@ word2vec-embeddings/data/*
 gan-mnist/data/*
 batch-norm/data/*
 dcgan-svhn/data/*
+cycle-gan/summer2winter-yosemite/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
