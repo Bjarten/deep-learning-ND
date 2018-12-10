@@ -13,6 +13,7 @@ gan-mnist/data/*
 batch-norm/data/*
 dcgan-svhn/data/*
 cycle-gan/summer2winter-yosemite/*
+project-face-generation/processed_celeba_small/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
