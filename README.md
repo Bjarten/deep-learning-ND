@@ -7,7 +7,7 @@ This repository was created for the [Deep Learning Nanodegree](https://www.udaci
 
 ## Project 3: TV Script Generation
 
-## Project 4: Bike Sharing
+## Project 4: Face Generation
 
 ## Exercises
 [autoencoder](autoencoder)<br/>
