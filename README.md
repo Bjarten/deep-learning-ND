@@ -10,17 +10,17 @@ This repository was created for the [Deep Learning Nanodegree](https://www.udaci
 ## Project 4: Bike Sharing
 
 ## Exercises
-[autoencoder](autoencoder)
-[batch-norm](batch-norm)
-[convolutional-neural-networks](convolutional-neural-networks)
-[dcgan-svhn](dcgan-svhn)
-[gan-mnist](gan-mnist)
-[intro-neural-networks](intro-neural-networks)
-[intro-to-pytorch](intro-to-pytorch)
-[recurrent-neural-networks](recurrent-neural-networks)
-[sentiment-analysis-network](sentiment-analysis-network)
-[sentiment-rnn](sentiment-rnn)
-[style-transfer](style-transfer)
-[transfer-learning](transfer-learning)
-[weight-initialization](weight-initialization)
+[autoencoder](autoencoder)<br/>
+[batch-norm](batch-norm)<br/>
+[convolutional-neural-networks](convolutional-neural-networks)<br/>
+[dcgan-svhn](dcgan-svhn)<br/>
+[gan-mnist](gan-mnist)<br/>
+[intro-neural-networks](intro-neural-networks)<br/>
+[intro-to-pytorch](intro-to-pytorch)<br/>
+[recurrent-neural-networks](recurrent-neural-networks)<br/>
+[sentiment-analysis-network](sentiment-analysis-network)<br/>
+[sentiment-rnn](sentiment-rnn)<br/>
+[style-transfer](style-transfer)<br/>
+[transfer-learning](transfer-learning)<br/>
+[weight-initialization](weight-initialization)<br/>
 [word2vec-embeddings](word2vec-embeddings)
