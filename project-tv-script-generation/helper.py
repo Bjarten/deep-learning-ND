@@ -16,7 +16,6 @@ def load_data(path):
 
     return data
 
-
 def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
     """
     Preprocess Text Data
@@ -24,7 +23,7 @@ def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
     text = load_data(dataset_path)
     
     # Ignore notice, since we don't use it for analysing the data
-    text = text[81:]
+    #text = text[81:]
 
     token_dict = token_lookup()
     for key, token in token_dict.items():
@@ -32,7 +31,7 @@ def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
 
     text = text.lower()
     text = text.split()
-
+    
     vocab_to_int, int_to_vocab = create_lookup_tables(text + list(SPECIAL_WORDS.values()))
     int_text = [vocab_to_int[word] for word in text]
     pickle.dump((int_text, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
