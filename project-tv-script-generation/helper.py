@@ -3,7 +3,7 @@ import pickle
 import torch
 
 
-SPECIAL_WORDS = {'PADDING': '<PAD>'}
+SPECIAL_WORDS = {'UNKNOWN': '<UNK>', 'PADDING': '<PAD>'}
 
 
 def load_data(path):
@@ -16,7 +16,7 @@ def load_data(path):
 
     return data
 
-def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
+def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables, vocab_treshold):
     """
     Preprocess Text Data
     """
@@ -32,8 +32,15 @@ def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
     text = text.lower()
     text = text.split()
     
-    vocab_to_int, int_to_vocab = create_lookup_tables(text + list(SPECIAL_WORDS.values()))
-    int_text = [vocab_to_int[word] for word in text]
+    vocab_to_int, int_to_vocab = create_lookup_tables(text, vocab_treshold)
+    
+    int_text = []
+    for word in text:
+        if not word in vocab_to_int:
+            int_text.append(vocab_to_int[SPECIAL_WORDS['UNKNOWN']])
+        else:
+            int_text.append(vocab_to_int[word])
+    
     pickle.dump((int_text, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
 
 
