@@ -8,8 +8,11 @@ This repository was created for the [Deep Learning Nanodegree](https://www.udaci
 In this project, I build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up, I have a much better understanding of gradient descent, backpropagation, and other concepts that are important to know before moving on to higher level tools such as PyTorch. The data comes from the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset).
 
 
-## Project 2: Dog Classification
-[project-dog-classification](project-dog-classification)<br/>
+## Project 2: Dog-Breed Classifier
+
+[Dog-Breed Classifier Project](project-dog-classification)<br/>
+
+In this project, I build a pipeline to process real-world, user-supplied images. Given an image of a dog, my algorithm will identify an estimate of the canine’s breed by using state-of-the-art CNN models for classification. If supplied an image of a human face, the code will identify the resembling dog breed.
 
 ## Project 3: TV Script Generation
 [project-tv-script-generation](project-tv-script-generation)<br/>
