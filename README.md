@@ -1,8 +1,12 @@
 # deep-learning-ND
 This repository was created for the [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at [Udacity](https://www.udacity.com/). The original tutorial and project notebooks for this course can be found at the [deep-learning-v2-pytorch](https://github.com/udacity/deep-learning-v2-pytorch) repository.
 
-## Project 1: Bike Sharing
-[project-bikesharing](project-bikesharing)<br/>
+## Project 1: Predicting Bike-Sharing Patterns
+
+[Predicting Bike-Sharing Patterns Project](project-bikesharing)<br/>
+
+In this project, I build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up, I have a much better understanding of gradient descent, backpropagation, and other concepts that are important to know before moving on to higher level tools such as PyTorch. The data comes from the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset).
+
 
 ## Project 2: Dog Classification
 [project-dog-classification](project-dog-classification)<br/>
