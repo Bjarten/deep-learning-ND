@@ -1,5 +1,5 @@
 # Deep Learning Nanodegree
-This repository contains my exercises and projects for the Deep [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at [Udacity](https://www.udacity.com/). You can find the original exercise and project notebooks for this course at the [deep-learning-v2-pytorch](https://github.com/udacity/deep-learning-v2-pytorch) and [sagemaker-deployment](https://github.com/udacity/sagemaker-deployment) repositories.
+This repository contains my exercises and projects for the [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) at [Udacity](https://www.udacity.com/). You can find the original exercise and project notebooks for this course at the [deep-learning-v2-pytorch](https://github.com/udacity/deep-learning-v2-pytorch) and [sagemaker-deployment](https://github.com/udacity/sagemaker-deployment) repositories.
 
 ## Project 1: Predicting Bike-Sharing Patterns
 
